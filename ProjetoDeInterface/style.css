@@ -1,12 +1,25 @@
+/**Importando Fontes**/
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@font-face {
+    font-family: "Bungee Tint", sans-serif;
+    src: url(Fontes/BebasNeue-Regular.ttf);
+}
+
 /*Comentario CSS*/ 
 body{
     background-color: aqua;
 }
 
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
 /* Configuração do Menu*/
 
 #bodyindex {
-    background-color: bisque;
+    background-color: rgb(170, 146, 12);
     text-align: left;
     border-width: 10px;
     margin: 20 auto;
@@ -17,6 +30,9 @@ body{
     list-style: none;
     border: 2px solid black;
     float: left;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .menu li {
@@ -26,15 +42,43 @@ body{
 }
 
 .menu li a{
-    color: chocolate;
+    color:  rgb(255, 255, 255);
     text-decoration: none;
     padding: 5px 10px;
     display: block;
 }
 
 .menu li a:hover {
-    background: yellow;
-    color: darkred;
-    box-shadow: 3px 10px 0px blue;
+    background: rgb(32, 32, 28);
+    color: rgb(255, 0, 0);
+    box-shadow: 3px 10px 0px rgb(0, 0, 0);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
+
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: black;
+    display: none;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li{
+    border: 1px solid black;
+    display: block;
+    width: 100px;
+}
+
+#primeiroTexto{
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+  
